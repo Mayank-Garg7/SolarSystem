@@ -1,6 +1,7 @@
 
 
 # Solar System Project Readme
+![Screenshot 2023-09-22 095803](https://github.com/Mayank-Garg7/SolarSystem/assets/113042462/3f4c2382-5baf-421c-9230-b3e4ebef6b23)
 
 ## Description
 This Solar System project is a simple HTML and CSS animation that provides a visually appealing representation of our solar system. It features the Sun, eight planets (Mercury, Venus, Earth with its Moon, Mars, Jupiter, Saturn, Uranus, and Neptune), each with its orbiting motion, and some basic styling for a space-themed background.
