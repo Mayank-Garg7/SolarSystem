@@ -2,7 +2,7 @@ body {
     margin: auto;
     height: 100vh;
     display: flex;
-    background-image: url(\hello.jpg);
+    background-image: url('./images/background.jpg');
     background-color: black;
     overflow: hidden;
 }
