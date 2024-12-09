@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black url('./images/background.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    color: white;
+}
+
+.container {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sun goes here */
+.sun {
+    top: 50%;
+    left: 50%;
+    width: 5em;
+    height: 5em;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 5em rgb(255, 0, 0);
+}
+
+
+/* Mercury goes here */
+.mercury {
+    position: absolute;
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    top: 39.2%;
+    left: 43.9%;
+    width: 10em;
+    height: 10em;
+    border-color: rgb(217, 109, 15) ;
+    animation: orbit 990ms linear infinite;
+    border-color: rgb(217, 109, 15) transparent;
+}
+.mercury::before {
+    top: 0;
+    right: 0.9em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(243, 150, 84);
+}
+.mercury::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+/* Venus goes here */
+.venus {
+    position: absolute;
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    border-color: rgb(193, 251, 1) transparent;
+    border-radius: 50%;
+    top: 34.0%;
+    left: 41.0%;
+    width: 15em;
+    height: 15em;
+    animation: orbit 2530ms linear infinite;
+}
+.venus::before {
+    top: 1em;
+    right: 0.9em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(191, 248, 5);
+}
+.venus::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+/* Earth and Moon goes here */
+.earth {
+    top: 23.6%;
+    left: 35.1%;
+    width: 25em;
+    height: 25em;
+    animation: orbit 4.1s linear infinite;
+}
+.moon {
+    top: .5em;
+    right: 0.5em;
+    width: 7.2em;
+    height: 7.2em;
+    animation: orbit 450ms linear infinite;
+}
+.earth,
+.moon {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(71, 246, 132) transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.earth::before,
+.moon::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before {
+    top: 2em;
+    right: 2em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+.moon::before {
+    top: 0.2em;
+    right: 0.3em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+
+
+/* Mars goes here */
+.mars {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(251, 51, 1);
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    top: 18.5%;
+    left: 32.1%;
+    width: 30em;
+    height: 30em;
+    animation: orbit 7.7s linear infinite;
+    border-color: rgb(193, 251, 1) transparent;
+}
+.mars::before {
+    top: 3.2em;
+    right: 3em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(191, 248, 5);
+}
+.mars::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+/* code for Jupiter  */
+.jupiter {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(205, 251, 1);
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    top: 13.29%;
+    left: 29.1%;
+    width: 35em;
+    height: 35em;
+    border-color: rgb(193, 251, 1) transparent;
+    animation: orbit 10.7s linear infinite;
+}
+.jupiter::before {
+    top: 4em;
+    right: 2.8em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(191, 248, 5);
+}
+.jupiter::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+/* code for Saturn  */
+.saturn {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(234, 251, 1);
+    border-radius: 50%;
+    top: 8.3%;
+    left: 26.2%;
+    width: 40em;
+    height: 40em;
+    animation: orbit 12s linear infinite;
+    border-width: 0.1em 0.1em 0 0;
+    border-color: rgb(193, 251, 1) transparent;
+}
+.saturn::before {
+    top: 5.2em;
+    right: 4em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(191, 248, 5);
+}
+.saturn::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+/* code for Uranus  */
+.uranus {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(247, 251, 1);
+    border-radius: 50%;
+    top: 3.3%;
+    left: 23.3%;
+    width: 45em;
+    height: 45em;
+    animation: orbit 354s linear infinite;
+    border-color: rgb(193, 251, 1) transparent;
+    border-width: 0.1em 0.1em 0 0;
+    /* box-shadow: 0 0 3em rgb(255, 255, 0); */
+}
+.uranus::before {
+    top: 5.2em;
+    right: 5.5em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(191, 248, 5);
+}
+.uranus::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+/* code for Neptune  */
+.neptune {
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(193, 251, 1);
+    border-radius: 50%;
+    top: -2%;
+    left: 20.4%;
+    width: 50em;
+    height: 50em;
+    border-width: 0.1em 0.1em 0 0;
+    animation: orbit 677s linear infinite;
+    border-color: rgb(193, 251, 1) transparent;
+    /* box-shadow: 0 0 3em rgb(51, 0, 255); */
+}
+.neptune::before {
+    top: 5.2em;
+    right: 7em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgb(191, 248, 5);
+}
+.neptune::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+/* code for keyframes and media  */
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
