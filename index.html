@@ -1,28 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <time>Solar System</time>
 </head>
 
 <body>
-    <div class="containet">
-        <div class="sun"></div>
-        <div class="mercury"></div>
-        <div class="venus"></div>
-        <div class="earth">
-            <div class="moon"></div>
+
+    <div class="content">
+        <div class="circles">
+            <div class="mercury_circle"></div>
+            <div class="venus_circle"></div>
+            <div class="earth_circle"></div>
+            <div class="mars_circle"></div>
+            <div class="saturn_circle"></div>
+            <div class="jupiter_circle"></div>
+            <div class="uranus_circle"></div>
+            <div class="neptune_circle"></div>
         </div>
-        <div class="mars"></div>
-        <div class="jupiter"></div>
-        <div class="saturn"></div>
-        <div class="uranus"></div>
-        <div class="neptune"></div>
+
+        <div id="planets">
+            <div class="planet sun">
+            </div>
+            <div class="mercury_container">
+                <div class="gif_mercury">
+                </div>
+                <div class="shadow_mercury">
+                    <div class="light"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="venus_container">
+                <div class="gif_venus">
+                </div>
+                <div class="shadow_venus">
+                    <div class="light"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="earth_moon_container">
+                <div class="earth_container">
+                    <div class="gif_earth">
+                        <img src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/earth_saibbo.gif">
+                    </div>
+                    <div class="shadow_earth">
+                        <div class="light"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="moon_container">
+
+                    <div class="moon">
+                        <img src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/moon_nqqsgu.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="mars_container">
+                <div class="gif_mars">
+                </div>
+                <div class="shadow_mars">
+                    <div class="light"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="jupiter_container">
+                <div class="gif_jupiter">
+                    <img src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/jupiter_cxhuh5.gif">
+                </div>
+                <div class="shadow_jupiter">
+                    <div class="light"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="saturn_ring_container">
+                <div class="saturn_container">
+                    <div class="gif_saturn">
+                        <img src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/jupiter_cxhuh5.gif">
+                    </div>
+                    <div class="shadow_saturn">
+                        <div class="light"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="ring_container">
+                    <div class="gif_ring">
+                        <div>
+                            <img src="https://res.cloudinary.com/yerevan/image/upload/v1484080037/ring_zofwhd.png">
+                        </div>
+                        <div>
+                            <img src="https://res.cloudinary.com/yerevan/image/upload/v1484080037/ring_zofwhd.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uranus_container">
+                <div class="gif_uranus">
+                </div>
+                <div class="shadow_uranus">
+                    <div class="light"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="neptune_container">
+                <div class="gif_neptune">
+                </div>
+                <div class="shadow_neptune">
+                    <div class="light"></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
+    <script src="script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </body>
 
 </html>
